@@ -1,0 +1,94 @@
+* {margin: 0; padding: 0;}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #DCECF2;
+}
+
+header {
+    background-color: #4A6FA5;
+    background-image: url('img/snow.gif');
+    background-repeat: repeat-x;
+}
+
+#headerGradient {
+    padding: 10px;
+    background: linear-gradient(#4A6FA5, 60%, #DCECF2);
+}
+
+header h1 {
+    color: #76c076;
+    padding: 20px;
+    text-align: center;
+    font-size: 85px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+div.card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+div.card p {
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.card img {
+    padding: 10px;
+}
+
+div.card div.imgDiv {
+    height: 400px;
+    padding: 10px;
+    background-color: #F08080;
+    border-radius: 125px;
+    outline: 2px solid red;
+}
+
+div.card div.imgDiv:hover {
+    background-image: url('img/snow.gif');
+    background-repeat: repeat-x;
+}
+
+#present {
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#present:hover {
+    animation-name: shakePresent;
+}
+
+#santa {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#santa:hover {
+    animation-name: shakeSanta;
+}
+
+@keyframes shakePresent {
+    0% {transform: translateX(15px) rotate(1.5deg);}
+    50% {transform: translateX(-15px) rotate(-1.5deg);}
+    100% {transform: translateX(15px) rotate(1.5deg);}
+}
+
+@keyframes shakeSanta {
+    0% {transform: translateX(15px) rotate(2deg);}
+    16.67% {transform: translateY(10px)}
+    33.33% {transform: translateY(-10px)}
+    50% {transform: translateX(-15px) rotate(-2deg);}
+    66.67% {transform: translateY(10px)}
+    83.33% {transform: translateY(-10px)}
+    100% {transform: translateX(15px) rotate(2deg);}
+}

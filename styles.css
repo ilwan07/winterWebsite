@@ -42,10 +42,11 @@ div.card p {
 
 div.card img {
     padding: 10px;
+    height: 400px;
+
 }
 
 div.card div.imgDiv {
-    height: 400px;
     padding: 10px;
     background-color: #F08080;
     border-radius: 125px;
@@ -64,7 +65,7 @@ div.card div.imgDiv:hover {
 }
 
 #present:hover {
-    animation-name: shakePresent;
+    animation-name: present;
 }
 
 #santa {
@@ -74,16 +75,26 @@ div.card div.imgDiv:hover {
 }
 
 #santa:hover {
-    animation-name: shakeSanta;
+    animation-name: santa;
 }
 
-@keyframes shakePresent {
+#snowman {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#snowman:hover {
+    animation-name: snowman;
+}
+
+@keyframes present {
     0% {transform: translateX(15px) rotate(1.5deg);}
     50% {transform: translateX(-15px) rotate(-1.5deg);}
     100% {transform: translateX(15px) rotate(1.5deg);}
 }
 
-@keyframes shakeSanta {
+@keyframes santa {
     0% {transform: translateX(15px) rotate(2deg);}
     16.67% {transform: translateY(10px)}
     33.33% {transform: translateY(-10px)}
@@ -91,4 +102,10 @@ div.card div.imgDiv:hover {
     66.67% {transform: translateY(10px)}
     83.33% {transform: translateY(-10px)}
     100% {transform: translateX(15px) rotate(2deg);}
+}
+
+@keyframes snowman {
+    0% {transform: translateX(-5px) translateY(10px) rotate(1.5deg);}
+    50% {transform: translateY(-10px) rotate(-1.5deg);}
+    100% {transform: translateX(-5px) translateY(10px) rotate(1.5deg);}
 }

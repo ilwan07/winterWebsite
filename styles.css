@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #4A6FA5;
-    background-image: url('img/snow.gif');
+    background-image: url("img/snow.gif");
     background-repeat: repeat-x;
 }
 
@@ -48,13 +48,15 @@ div.card img {
 
 div.card div.imgDiv {
     padding: 10px;
-    background-color: #F08080;
+    background-color: #e75050;
+    background-image: url("img/wrap.png");
+    background-repeat: repeat;
     border-radius: 125px;
     outline: 2px solid red;
 }
 
 div.card div.imgDiv:hover {
-    background-image: url('img/snow.gif');
+    background-image: url("img/snow.gif");
     background-repeat: repeat-x;
 }
 

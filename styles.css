@@ -109,3 +109,85 @@ div.card div.imgDiv:hover {
     50% {transform: translateY(-10px) rotate(-1.5deg);}
     100% {transform: translateX(-5px) translateY(10px) rotate(1.5deg);}
 }
+
+#footerGradient {
+    padding: 10px;
+    background: linear-gradient(#DCECF2, 40%, #4A6FA5);
+}
+
+footer {
+    background-color: #4A6FA5;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+#leftFooter1 {
+    text-align: left;
+}
+
+#leftFooter2 {
+    padding-right: 5px;
+    text-align: left;
+}
+
+#heart {
+    font-size: 26px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#heart:hover {
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes heart {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.5);}
+    50% {transform: scale(1);}
+}
+
+#sidenote {
+    font-size: 3px;
+    text-align: left;
+}
+
+#sidenote:hover {
+    color: #4A6FA5;
+    transition: color 0.5s ease;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+#space {
+    flex-grow: 1;
+}
+
+#rightFooter {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#cookie {
+    height: 50px;
+}
+
+#cookie:hover {
+    animation-name: cookie;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cookie {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
